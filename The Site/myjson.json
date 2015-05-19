@@ -1,0 +1,56 @@
+jsonp({
+    "array" : [
+        {
+            "name" : "pechena zelka",
+            "form" : [
+                {
+                    "name": "name",
+                    "type": 0,
+					"desc":"tvoeto ime"
+                },
+                {
+                    "name": "score",
+                    "type": 9,
+					"desc":"tvoeto ime"
+                },
+                {
+                    "name": "noob",
+                    "type": 1,
+					"desc":"tvoeto ime"
+                },
+                {
+                    "name": "email",
+                    "type": 8,
+					"desc":"tvoeto ime"
+                }
+            ],
+            "link": "myphp.php"
+        },
+        {
+            "name": "selqnin",
+            "form": [
+                {
+                    "name": "yname",
+                    "type": 0,
+					"desc":"tvoeto ime"
+                },
+                {
+                    "name": "gname",
+                    "type": 0,
+					"desc":"imeto na baba ti"
+                },
+                {
+                    "name": "kname",
+                    "type": 0,
+					"desc":"imeto na kravata ti"
+                },
+                {
+                    "name": "krava",
+                    "type": 1,
+					"desc":"imash li krava"
+                }
+            ],
+            "link": "krava.php"
+        }
+    ]
+});
