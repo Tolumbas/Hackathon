@@ -2,12 +2,17 @@ var json,success;
 
 function jsonp(j){
 	json=j;
+	console.log("got it!");
 	for (var a=0;a<json.array.length;a++){
 		$("div.buttons").append(
 		"<button class='default' id='"+json.array[a].name+"' name='"+json.array[a].name+"'>"+ json.array[a].name + "</button>"
-	);
+		);
+		$(".default").click(function(){
+			$("div.holder").animate({left:"-105%"});
+		});
 	}
-	console.log("got it!");
+	
+	
 	}
 
 jQuery(document).ready(
