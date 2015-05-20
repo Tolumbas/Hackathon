@@ -10,6 +10,11 @@ div.holder{
 	width:210%;
 	height:100%;
 }
+div.formholder{
+width:100%;
+margin-bottom:2%;
+overflow:hidden;
+}
 div.main{	
 	width:45%;
 	margin-left:1.25%;

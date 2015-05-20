@@ -6,25 +6,25 @@ jsonp({
                 {
                     "name": "name",
                     "type": 0,
-					"desc":"tvoeto ime"
-					"must":"true"
-                },
-                {
-                    "name": "score",
-                    "type": 9,
-					"desc":"tvoeto ime"
-					"must":"true"
-                },
-                {
-                    "name": "noob",
-                    "type": 1,
-					"desc":"tvoeto ime"
+					"desc":"tvoeto ime",
 					"must":"true"
                 },
                 {
                     "name": "email",
-                    "type": 8,
-					"desc":"tvoeto ime"
+                    "type": 0,
+					"desc":"email",
+					"must":"true"
+                },
+                {
+                    "name": "noob",
+                    "type": 0,
+					"desc":"noob",
+					"must":"true"
+                },
+                {
+                    "name": "date",
+                    "type": 0,
+					"desc":"reee",
 					"must":"true"
                 }
             ],
@@ -36,25 +36,25 @@ jsonp({
                 {
                     "name": "yname",
                     "type": 0,
-					"desc":"tvoeto ime"
+					"desc":"tvoeto ime",
 					"must":"true"
                 },
                 {
                     "name": "gname",
                     "type": 0,
-					"desc":"imeto na baba ti"
+					"desc":"imeto na baba ti",
 					"must":"true"
                 },
                 {
                     "name": "kname",
                     "type": 0,
-					"desc":"imeto na kravata ti"
+					"desc":"imeto na kravata ti",
 					"must":"true"
                 },
                 {
                     "name": "krava",
                     "type": 1,
-					"desc":"imash li krava"
+					"desc":"imash li krava",
 					"must":"true"
                 }
             ],

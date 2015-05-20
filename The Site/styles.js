@@ -9,13 +9,15 @@ function setEvent(a){
 	$("#" + a).click(function(){
 		console.log(a);
 		for (var b=0;b<json.array[a].form.length;b++){
-			$("div.form").append("<span class = 'desc'> "+json.array[a].form[b].desc+"</span>");	
-			if (json.array[a].form[b]==0) // TEXT
-				$("div.form").append("<input class = 'text' type = 'text' name='"+json.array[a].form[b].name+"'>");	
-			if (json.array[a].form[b]==1) // TELEPHONE
-				$("div.form").append("<input class = 'text' type = 'tel' name='"+json.array[a].form[b].name+"'>");	
-			if (json.array[a].form[b]==2) // TELEPHONE
-				$("div.form").append("<input class = 'text' type = 'tel' name='"+json.array[a].form[b].name+"'>");	
+			$("div.form").append("<div class = 'formholder'></div>");	
+			$("div.formholder:last").append("<span class = 'desc'> "+json.array[a].form[b].desc+"</span>");	
+			if (json.array[a].form[b].type==0) // TEXT
+				$("div.formholder:last").append("<input class = 'text' type = 'text' name='"+json.array[a].form[b].name+"'>");	
+			if (json.array[a].form[b].type==1) // TELEPHONE
+				$("div.formholder:last").append("<input class = 'text' type = 'tel' name='"+json.array[a].form[b].name+"'>");	
+			if (json.array[a].form[b].type==2) // TELEPHONE
+				$("div.formholder:last").append("<input class = 'text' type = 'tel' name='"+json.array[a].form[b].name+"'>");	
+				
 		}
 		$("div.holder").animate({left:"-105%"});
 	});
