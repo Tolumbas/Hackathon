@@ -4,11 +4,11 @@ div.title{
 	background-color:rgb(89,136,247);
 }
 div.holder{
-top:20%;
-position:absolute;
-overflow:hidden;
-width:210%;
-height:100%;
+	top:20%;
+	position:absolute;
+	overflow:hidden;
+	width:210%;
+	height:100%;
 }
 div.main{	
 	width:45%;
@@ -20,11 +20,34 @@ div.input{
 	margin-left:5%;
 	float:left;
 	width:45%;
-	background-color: #000;
+	background-color: #DDD;
 }
 div.buttons{
 	width:100%;
 	margin-top:5%;
+}
+div.form{
+	font-size:5vmin;
+	padding:2.5%;
+	width:85%;
+	overflow:hidden;
+	background-color: #EEE;
+	margin-top:5%;
+	margin-left:5%;
+	margin-right:5%;
+	border-radius:4px;
+}
+span.desc{
+	text-align:center;
+	width:40%;
+	float:left;
+	margin-right:2%;
+}
+input.text{
+	margin-top:1%;
+	width:48%;
+	height: 10%;
+	float:left;
 }
 body{
 	overflow:hidden;
@@ -42,7 +65,7 @@ button.default{
 	margin-right:auto;
 	margin-left:auto;
 	width:100%;
-	font-size:500%;
+	font-size:15vmin;
 	background-color:#AAF;
 	
 }

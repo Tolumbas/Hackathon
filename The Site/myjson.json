@@ -7,21 +7,25 @@ jsonp({
                     "name": "name",
                     "type": 0,
 					"desc":"tvoeto ime"
+					"must":"true"
                 },
                 {
                     "name": "score",
                     "type": 9,
 					"desc":"tvoeto ime"
+					"must":"true"
                 },
                 {
                     "name": "noob",
                     "type": 1,
 					"desc":"tvoeto ime"
+					"must":"true"
                 },
                 {
                     "name": "email",
                     "type": 8,
 					"desc":"tvoeto ime"
+					"must":"true"
                 }
             ],
             "link": "myphp.php"
@@ -33,21 +37,25 @@ jsonp({
                     "name": "yname",
                     "type": 0,
 					"desc":"tvoeto ime"
+					"must":"true"
                 },
                 {
                     "name": "gname",
                     "type": 0,
 					"desc":"imeto na baba ti"
+					"must":"true"
                 },
                 {
                     "name": "kname",
                     "type": 0,
 					"desc":"imeto na kravata ti"
+					"must":"true"
                 },
                 {
                     "name": "krava",
                     "type": 1,
 					"desc":"imash li krava"
+					"must":"true"
                 }
             ],
             "link": "krava.php"
