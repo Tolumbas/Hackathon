@@ -1,14 +1,17 @@
 div.title{
+	position:absolute;
 	width:100%;
-	height:20%;
+	height:30%;
+	overflow:hidden;
+	
 	background-color:rgb(89,136,247);
 }
 div.holder{
-	top:20%;
+	top:30%;
 	position:absolute;
 	overflow:hidden;
+	overflow-y:scroll;
 	width:210%;
-	height:100%;
 }
 div.formholder{
 width:100%;
@@ -56,13 +59,19 @@ input.text{
 }
 body{
 	overflow:hidden;
+	overflow-y:scroll;
 	margin: 0;
-	height:100%;
 	background-color: #DDD;
 }
 html {
 	margin: 0;
-    height: 100%;
+}
+img.title{
+	display: block;
+	height:96%;
+	vertical-align:middle;
+	margin-left:auto;
+	margin-right:auto;
 }
 button.default{
 	height:130px;
@@ -70,7 +79,7 @@ button.default{
 	margin-right:auto;
 	margin-left:auto;
 	width:100%;
-	font-size:15vmin;
+	font-size:12vmin;
 	background-color:#AAF;
 	
 }
