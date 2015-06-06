@@ -1,5 +1,7 @@
 var json = "undefined";
-
+document.addEventListener("backbutton", function(e){
+e.preventDefault();
+}, false);
 function jsonp(j){
 	json=j;
 	console.log("got it!");
@@ -8,7 +10,10 @@ function jsonp(j){
 function setEvent(a){
 	$("#" + a).click(function(){
 		console.log(a);
-		$("div.form").append("<div class = ""></div>");
+		$("div.form").append("<div class='formtitle'></div>");
+		$("div.formtitle").append(
+		"<div style='height:80%;width:100%><button class='back'><img href="+json.array[a].img+"></div>"
+		);
 		for (var b=0;b<json.array[a].form.length;b++){
 			var s1 = json.array[a].form[b].desc;
 			var s2 = json.array[a].form[b].must=="true"?'*':' ';

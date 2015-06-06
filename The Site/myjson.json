@@ -122,6 +122,7 @@ jsonp({
         {
             "name": "Пушене на публични места",
 			"link": "http://bezdim.org/signali/reports/submit",
+			"img": "/dimTitle.png",
             "form": [
                 {
                     "name": "incident_title",
