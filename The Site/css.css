@@ -91,11 +91,10 @@ html,body{
 	overflow-x: hidden;
 }
 img.title{
-	display: block;
-	height:96%;
-	vertical-align:middle;
-	margin-left:auto;
-	margin-right:auto;
+	margin-left:3%;
+	width:70%;
+	height:70%;
+	float:left;
 }
 button.default{
 	height:130px;
@@ -109,6 +108,12 @@ button.default{
 	color:rgb(216,180,252);
 	background-color:rgb(63,65,103);
 	
+}
+button.back{
+float:left;
+width:10%;
+height:30vmin;
+margin-left:3%;
 }
 input.submit{
 	height:130px;

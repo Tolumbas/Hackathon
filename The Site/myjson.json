@@ -3,7 +3,7 @@ jsonp({
         {
             "name" : "трудова експлоатация",
 			"link": "http://www.gli.government.bg/do.action.php",
-			"img": "/trudTitle.png",
+			"img": "trudTitle.png",
             "form" : [
                 {
                     "name": "fname",
@@ -122,7 +122,7 @@ jsonp({
         {
             "name": "Пушене на публични места",
 			"link": "http://bezdim.org/signali/reports/submit",
-			"img": "/dimTitle.png",
+			"img": "dimTitle.png",
             "form": [
                 {
                     "name": "incident_title",

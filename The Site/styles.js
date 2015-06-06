@@ -13,8 +13,12 @@ function setEvent(a){
 		$("div.input").show();
 		$("div.form").append("<div class='formtitle'></div>");
 		$("div.formtitle").append(
-		"<div style='height:80%;width:100%><button class='back'><img href="+json.array[a].img+"></div>"
+		"<div style='height:80%;width:100%'><button class='back'>НАЗАД</button><img class='title' src="+json.array[a].img+"></img></div>"
 		);
+		$("button.back").click(function(){
+		$("div.holder").animate({left:"0"});
+		$("div.form").empty();
+		});
 		for (var b=0;b<json.array[a].form.length;b++){
 			var s1 = json.array[a].form[b].desc;
 			var s2 = json.array[a].form[b].must=="true"?'*':' ';
