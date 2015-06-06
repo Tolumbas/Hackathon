@@ -71,7 +71,8 @@ input.box{
 	float:left;
 }
 body{
-	overflow:hidden;
+	width:100%;
+	overflow-x:hidden;
 	overflow-y:scroll;
 	margin: 0;
 	background-color: rgb(17,18,64);
