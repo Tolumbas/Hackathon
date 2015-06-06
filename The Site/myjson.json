@@ -2,7 +2,7 @@ jsonp({
     "array" : [
         {
             "name" : "трудова експлоатация",
-			"link": "/do.action.php?module=irregularities&action=add",
+			"link": "http://www.gli.government.bg/do.action.php",
 			"img": "/trudTitle.png"
             "form" : [
                 {
