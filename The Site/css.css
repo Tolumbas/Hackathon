@@ -82,15 +82,13 @@ input.box{
 	height: 10%;
 	float:left;
 }
-body{
-	width:100%;
-	overflow-x:hidden;
+html,body{
+	height:100%;
+    overflow-x: hidden;
 	overflow-y:scroll;
 	margin: 0;
 	background-color: rgb(17,18,64);
-}
-html{
-width:100%;
+	overflow-x: hidden;
 }
 img.title{
 	display: block;
@@ -115,7 +113,9 @@ button.default{
 input.submit{
 	height:130px;
 	margin-bottom:3%;
-	width:25%;
+	margin-top:2%;
+	width:50%;
+	height:10%;
 	font-size:5vmin;
 	border-radius:10px;
 	border:3px solid black;

@@ -10,6 +10,7 @@ function jsonp(j){
 function setEvent(a){
 	$("#" + a).click(function(){
 		console.log(a);
+		$("div.input").show();
 		$("div.form").append("<div class='formtitle'></div>");
 		$("div.formtitle").append(
 		"<div style='height:80%;width:100%><button class='back'><img href="+json.array[a].img+"></div>"
@@ -44,6 +45,7 @@ function setEvent(a){
 jQuery(document).ready(
 function(){
 	console.log("Hello jQuery!");
+	$("div.input").hide();
 	if(json!="undefined"){
 		for (var a=0;a<json.array.length;a++){
 		$("div.buttons").append(
