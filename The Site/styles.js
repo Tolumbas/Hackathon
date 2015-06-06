@@ -18,7 +18,7 @@ function setEvent(a){
 			if (json.array[a].form[b].type=="emailinput") // EMAIL
 				$("div.formholder:last").append("<input class = 'box' type = 'email' name='"+json.array[a].form[b].name+"'>");
 			if (json.array[a].form[b].type=="fileinput") // FILE
-				$("div.formholder:last").append("<input class = 'box' type = 'file' name='"+json.array[a].form[b].name+"'>");	
+				$("div.formholder:last").append("<input class = 'box' type = 'file' capture='camera' name='"+json.array[a].form[b].name+"'>");	
 			if (json.array[a].form[b].type=="checkbox") // CHECKBOX
 				$("div.formholder:last").append("<input class = 'box' type = 'checkbox' name='"+json.array[a].form[b].name+"'>");	
 				

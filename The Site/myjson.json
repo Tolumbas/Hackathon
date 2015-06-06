@@ -116,13 +116,6 @@ jsonp({
 					"desc":"Файл(сканирано копие на относими документи):",
 					"must":"true",
 					"search":"none"
-                },
-                {
-                    "name": "captcha",
-                    "type": "textinput",
-					"desc":"Код за сигурност:",
-					"must":"true",
-					"search":"none"
                 }
             ]
         },

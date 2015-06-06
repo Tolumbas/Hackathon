@@ -55,12 +55,17 @@ div.form{
 }
 span.desc{
 	text-align:center;
+	font-size:4vmin;
+	margin-top:4%;
 	width:40%;
 	float:left;
 	margin-right:2%;
 }
 input.box{
 	margin-top:1%;
+	font-family:font;
+	font-size:5vmin;
+	padding:4%;
 	width:48%;
 	height: 10%;
 	float:left;
