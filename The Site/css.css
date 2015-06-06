@@ -1,5 +1,4 @@
 div.title{
-	
 	margin-left:1.5%;
 	margin-top:5%;
 	padding-top:3%;
@@ -15,6 +14,7 @@ div.holder{
 	top:5%;
 	position:absolute;
 	overflow:hidden;
+	font-family:font;
 	overflow-y:scroll;
 	width:210%;
 }
@@ -59,7 +59,7 @@ span.desc{
 	float:left;
 	margin-right:2%;
 }
-input.text{
+input.box{
 	margin-top:1%;
 	width:48%;
 	height: 10%;
@@ -85,6 +85,7 @@ button.default{
 	margin-left:auto;
 	width:100%;
 	font-size:5vmin;
+	border-radius:10px;
 	border:3px solid black;
 	color:rgb(216,180,252);
 	background-color:rgb(63,65,103);
@@ -92,5 +93,5 @@ button.default{
 }
 @font-face {
     font-family: font;
-    src: url(OpenSans-Regular.tff);
+    src: url(OpenSans-Regular.ttf);
 }

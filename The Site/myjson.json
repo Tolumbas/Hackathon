@@ -1,34 +1,130 @@
 jsonp({
     "array" : [
         {
-            "name" : "pechena zelka",
+            "name" : "трудова експлоатация",
+			"link": "/do.action.php?module=irregularities&action=add",
+			"img": "/trudTitle.png"
             "form" : [
                 {
-                    "name": "name",
-                    "type": 0,
-					"desc":"tvoeto ime",
-					"must":"true"
+                    "name": "fname",
+                    "type": "textinput",
+					"desc":"Име:",
+					"must":"true",
+					"search":"first_name"
                 },
                 {
+                    "name": "mname",
+                    "type": "textinput",
+					"desc":"презиме",
+					"must":"true",
+					"search":"middle_name"
+                },
+				{
+                    "name": "lname",
+                    "type": "textinput",
+					"desc":"фамилия",
+					"must":"true",
+					"search":"last_name"
+                },
+                {
+                    "name": "city",
+                    "type": "textinput",
+					"desc":"населено място",
+					"must":"true",
+					"search":"city"
+                },
+				{
+                    "name": "postal_code",
+                    "type": "numinput",
+					"desc":"пощенски код",
+					"must":"false",
+					"search":"postal_code"
+                },
+				{
+                    "name": "address",
+                    "type": "textinput",
+					"desc":"адрес",
+					"must":"true"
+                },
+				{
+                    "name": "phone",
+                    "type": "telinput",
+					"desc":"Телефон",
+					"must":"true",
+					"search":"telephone"
+                },
+				{
                     "name": "email",
-                    "type": 0,
-					"desc":"email",
-					"must":"true"
+                    "type": "emailinput",
+					"desc":"E-mail",
+					"must":"true",
+					"search":"email"
+					
+                },
+				{
+                    "name": "employer",
+                    "type": "textinput",
+					"desc":"Работодател (фирма), срещу когото е сигналът:",
+					"must":"true",
+					"search":"none"
+                },
+				{
+                    "name": "employer_location",
+                    "type": "textinput",
+					"desc":"Населено място:",
+					"must":"false",
+					"search":"none"
+                },
+				{
+                    "name": "employer_address",
+                    "type": "textinput",
+					"desc":"Адрес на обекта, на който се извършва дейността:",
+					"must":"false",
+					"search":"none"
+                },
+				{
+                    "name": "bulstat",
+                    "type": "numinput",
+					"desc":"Булстат:",
+					"must":"false",
+					"search":"none"
+                },
+				{
+                    "name": "description",
+                    "type": "textinput",
+					"desc":"Описание на нарушението:",
+					"must":"true",
+					"search":"none"
+                },
+				{
+                    "name": "demands",
+                    "type": "textinput",
+					"desc":"Конкретно искане:",
+					"must":"true",
+					"search":"none"
+                },
+				{
+                    "name": "institutions",
+                    "type": "textinput",
+					"desc":"Описаният проблем разглежда ли се (разглеждан ли е) от други държавни институции или съдебни органи? От кои?:",
+					"must":"true",
+					"search":"none"
+                },
+				{
+                    "name": "file",
+                    "type": "fileinput",
+					"desc":"Файл(сканирано копие на относими документи):",
+					"must":"true",
+					"search":"none"
                 },
                 {
-                    "name": "noob",
-                    "type": 0,
-					"desc":"noob",
-					"must":"true"
-                },
-                {
-                    "name": "date",
-                    "type": 0,
-					"desc":"reee",
-					"must":"true"
+                    "name": "captcha",
+                    "type": "textinput",
+					"desc":"Код за сигурност:",
+					"must":"true",
+					"search":"none"
                 }
-            ],
-            "link": "myphp.php"
+            ]
         },
         {
             "name": "selqnin",
