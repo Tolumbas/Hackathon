@@ -143,13 +143,13 @@ jsonp({
                 },
                 {
                     "name": "incident_hour",
-                    "type": "hourinput",
+                    "type": "telephone",
 					"desc":"Час:",
 					"must":"false"
                 },
 				{
                     "name": "incident_minute",
-                    "type": "minuteinput",
+                    "type": "telephone",
 					"desc":"Минута:",
 					"must":"false"
                 },

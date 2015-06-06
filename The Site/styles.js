@@ -8,9 +8,13 @@ function jsonp(j){
 function setEvent(a){
 	$("#" + a).click(function(){
 		console.log(a);
+		$("div.form").append("<div class = ""></div>");
 		for (var b=0;b<json.array[a].form.length;b++){
+			var s1 = json.array[a].form[b].desc;
+			var s2 = json.array[a].form[b].must=="true"?'*':' ';
+			var s3 = s1.concat(s2);
 			$("div.form").append("<div class = 'formholder'></div>");	
-			$("div.formholder:last").append("<span class = 'desc'> "+json.array[a].form[b].desc+"</span>");	
+			$("div.formholder:last").append("<span class = 'desc'> "+s3+"</span>");	
 			if (json.array[a].form[b].type=="textinput") // TEXT
 				$("div.formholder:last").append("<input class = 'box' type = 'text' name='"+json.array[a].form[b].name+"'>");	
 			if (json.array[a].form[b].type=="telephone") // TELEPHONE
@@ -20,9 +24,14 @@ function setEvent(a){
 			if (json.array[a].form[b].type=="fileinput") // FILE
 				$("div.formholder:last").append("<input class = 'box' type = 'file' capture='camera' name='"+json.array[a].form[b].name+"'>");	
 			if (json.array[a].form[b].type=="checkbox") // CHECKBOX
-				$("div.formholder:last").append("<input class = 'box' type = 'checkbox' name='"+json.array[a].form[b].name+"'>");	
-				
+				$("div.formholder:last").append("<input class = 'box' type = 'checkbox' name='"+json.array[a].form[b].name+"'>");
+			if (json.array[a].form[b].type=="dateinput") // DATE
+				$("div.formholder:last").append("<input class = 'box' type = 'date' name='"+json.array[a].form[b].name+"'>");
+			if (json.array[a].form[b].type=="urlinput") // URL
+				$("div.formholder:last").append("<input class = 'box' type = 'url' name='"+json.array[a].form[b].name+"'>");						
 		}
+		$("div.form").append("<div class = 'formholder'></div>");	
+		$("div.formholder:last").append("<center><input class='submit' type='submit' value='Изпрати'></center>");
 		$("div.holder").animate({left:"-105%"});
 	});
 }
