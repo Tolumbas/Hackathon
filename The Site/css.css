@@ -1,28 +1,34 @@
 div.title{
-	position:absolute;
-	width:100%;
+	
+	margin-left:1.5%;
+	margin-top:5%;
+	padding-top:3%;
+	padding-bottom:3%;
+	font-size:12vmin;
+	text-align:center;
+	width:97%;
 	height:30%;
 	overflow:hidden;
-	
-	background-color:rgb(89,136,247);
+	background-color:rgb(164,166,165);
 }
 div.holder{
-	top:30%;
+	top:5%;
 	position:absolute;
 	overflow:hidden;
 	overflow-y:scroll;
 	width:210%;
 }
 div.formholder{
-width:100%;
-margin-bottom:2%;
-overflow:hidden;
+	width:100%;
+	margin-bottom:2%;
+	overflow:hidden;
 }
 div.main{	
 	width:45%;
 	margin-left:1.25%;
+	border-radius:20px;
 	float:left;
-	background-color: #DDD;
+	background-color: white;
 }
 div.input{
 	margin-left:5%;
@@ -31,8 +37,10 @@ div.input{
 	background-color: #DDD;
 }
 div.buttons{
-	width:100%;
+	margin-left:2%;
 	margin-top:5%;
+	width:96%;
+	
 }
 div.form{
 	font-size:5vmin;
@@ -61,10 +69,7 @@ body{
 	overflow:hidden;
 	overflow-y:scroll;
 	margin: 0;
-	background-color: #DDD;
-}
-html {
-	margin: 0;
+	background-color: rgb(17,18,64);
 }
 img.title{
 	display: block;
@@ -79,7 +84,13 @@ button.default{
 	margin-right:auto;
 	margin-left:auto;
 	width:100%;
-	font-size:12vmin;
-	background-color:#AAF;
+	font-size:5vmin;
+	border:3px solid black;
+	color:rgb(216,180,252);
+	background-color:rgb(63,65,103);
 	
+}
+@font-face {
+    font-family: font;
+    src: url(OpenSans-Regular.tff);
 }
