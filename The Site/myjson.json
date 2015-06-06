@@ -120,34 +120,58 @@ jsonp({
             ]
         },
         {
-            "name": "selqnin",
+            "name": "Пушене на публични места",
+			"link": "http://bezdim.org/signali/reports/submit",
             "form": [
                 {
-                    "name": "yname",
-                    "type": 0,
-					"desc":"tvoeto ime",
+                    "name": "incident_title",
+                    "type": "textinput",
+					"desc":"Относно",
 					"must":"true"
                 },
                 {
-                    "name": "gname",
-                    "type": 0,
-					"desc":"imeto na baba ti",
+                    "name": "incident_description",
+                    "type": "textinput",
+					"desc":"Описание",
 					"must":"true"
                 },
                 {
-                    "name": "kname",
-                    "type": 0,
-					"desc":"imeto na kravata ti",
+                    "name": "incident_date",
+                    "type": "dateinput",
+					"desc":"Дата:",
+					"must":"false"
+                },
+                {
+                    "name": "incident_hour",
+                    "type": "hourinput",
+					"desc":"Час:",
+					"must":"false"
+                },
+				{
+                    "name": "incident_minute",
+                    "type": "minuteinput",
+					"desc":"Минута:",
+					"must":"false"
+                },
+                {
+                    "name": "person_first",
+                    "type": "textinput",
+					"desc":"Вашето име и фамилия",
 					"must":"true"
                 },
                 {
-                    "name": "krava",
-                    "type": 1,
-					"desc":"imash li krava",
-					"must":"true"
-                }
+                    "name": "person_last",
+                    "type": "telephone",
+					"desc":"Телефон",
+					"must":"false"
+                },
+				{
+                    "name": "photo_id",
+                    "type": "fileinput",
+					"desc":"Качете снимки",
+					"must":"false"
+                },
             ],
-            "link": "krava.php"
         }
     ]
 });
