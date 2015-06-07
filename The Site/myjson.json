@@ -181,7 +181,7 @@ jsonp({
 					"must": "true",
 					"search": "none"
 				
-				}
+				},
 				{
                     "name": "photo_id",
                     "type": "fileinput",
