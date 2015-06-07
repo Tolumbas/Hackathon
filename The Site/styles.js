@@ -52,6 +52,11 @@ function setEvent(a){
 		}
 		$("#frm").append("<div class = 'formholder'></div>");	
 		$("div.formholder:last").append("<center><input class='submit' type='submit' value='Изпрати'></center>");
+		$("input.submit").click(function(){
+			for (var b=0;b<json.array[a].form.length;b++){
+				setcookie("div.formholder:eq("+b+")",json.array[a].form[b].search);
+			}
+		});
 		$("div.holder").animate({left:"-105%"});
 	});
 }
