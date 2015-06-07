@@ -41,7 +41,8 @@ function setEvent(a){
 			if (json.array[a].form[b].type=="urlinput") // URL
 				$("div.formholder:last").append("<input class = 'box' type = 'url' name='"+json.array[a].form[b].name+"'>");
 			if (json.array[a].form[b].type=="mapinput"){ // MAP
-				$("div.formholder:last").css("height","400px");
+				$("div.formholder:last").css({"height":"400px"});
+				$("span.desc:last").css({"clear":"both","width":"100%","text-align":"center"});
 				$("div.formholder:last").append(
 					"<div id='map-canvas'></div><input class = 'box' style='position:absolute;visibility: hidden;height:0' readonly='readonly' type = 'text' name='"+json.array[a].form[b].name+"'>"
 				);						
@@ -50,20 +51,21 @@ function setEvent(a){
 				$("#map-canvas").mouseup(function(){$("input[readonly^=readonly]").val(getlat().toString()+" "+getlng().toString());});
 			}
 		}
-		$
+		for (var b=0;b<json.array[a].form.length;b++){
+			readCookie("input.box:eq("+b+")",json.array[a].form[b].search);
+		}
 		$("#frm").append("<div class = 'formholder'></div>");	
 		$("div.formholder:last").append("<center><button class='submit2'>Изпрати</button></center>");
 		$("button.submit2").click(function(){
 			for (var b=0;b<json.array[a].form.length;b++){
-				if (json.array[a].form[b].must == "true" && $("div.formholder:eq("+b+")").val()==''){
+				if (json.array[a].form[b].must == "true" && $("input.box:eq("+b+")").val()==''){
 					alert("Попълни всички задължителни полета!");
 					return;
 				}
 			}
 			for (var b=0;b<json.array[a].form.length;b++){
-				//setcookie("div.formholder:eq("+b+")",json.array[a].form[b].search);
+				writeCookie("input.box:eq("+b+")",json.array[a].form[b].search);
 			}
-			
 		});
 		$("div.holder").animate({left:"-105%"});
 	});
