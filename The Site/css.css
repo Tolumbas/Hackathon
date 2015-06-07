@@ -3,8 +3,9 @@ div.title{
 	margin-top:5%;
 	padding-top:3%;
 	padding-bottom:3%;
-	font-size:20vmin;
+	font-size:14vmin;
 	text-align:center;
+	border-radius:10px;
 	width:97%;
 	height:30%;
 	overflow:hidden;
@@ -110,7 +111,7 @@ html,body{
 }
 img.title{
 	margin-left:3%;
-	width:70%;
+	width:80%;
 	float:left;
 }
 button.default{
@@ -126,10 +127,11 @@ button.default{
 	background-color:rgb(63,65,103);
 	
 }
-button.back{
+img.back{
 	float:left;
 	width:10%;
-	height:25vmin;
+	height:10%;
+	display: inline-block;
 	margin-left:3%;
 }
 button.submit2{

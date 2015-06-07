@@ -1,7 +1,4 @@
 var json = "undefined";
-document.addEventListener("backbutton", function(e){
-e.preventDefault();
-}, false);
 function jsonp(j){
 	json=j;
 	console.log("got it!");
@@ -13,9 +10,9 @@ function setEvent(a){
 		$("div.input").show();
 		$("div.form").append("<div class='formtitle'></div>");
 		$("div.formtitle").append(
-		"<div style='height:80%;width:100%'><button class='back'>НАЗАД</button><img class='title' src="+json.array[a].img+"></img></div>"
+		"<div style='height:80%;width:100%'><img class='back' src='back.png'></button><img class='title' src="+json.array[a].img+"></img></div>"
 		);
-		$("button.back").click(function(){
+		$("img.back").click(function(){
 			$("div.holder").animate({left:"0"});
 			$("div.form").empty();
 		});
@@ -66,6 +63,7 @@ function setEvent(a){
 			for (var b=0;b<json.array[a].form.length;b++){
 				writeCookie("input.box:eq("+b+")",json.array[a].form[b].search);
 			}
+			alert("Сигналът е подаден!");
 		});
 		$("div.holder").animate({left:"-105%"});
 	});
