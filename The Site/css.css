@@ -10,6 +10,11 @@ div.title{
 	overflow:hidden;
 	background-color:rgb(164,166,165);
 }
+#map-canvas {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 div.formtitle{
 	margin-left:1.5%;
 	margin-top:5%;
