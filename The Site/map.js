@@ -33,6 +33,6 @@ var pos=new google.maps.LatLng(bla.coords.latitude,bla.coords.longitude);
       title: 'Location'
 	  });
 }
-google.maps.event.addDomListener(window, 'load', init);
+//google.maps.event.addDomListener(window, 'load', init);
 function getlat(){ return marker.getPosition().lat();}
 function getlng(){ return marker.getPosition().lng();}

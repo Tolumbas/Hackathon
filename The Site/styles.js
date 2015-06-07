@@ -40,11 +40,15 @@ function setEvent(a){
 				$("div.formholder:last").append("<input class = 'box' type = 'date' name='"+json.array[a].form[b].name+"'>");
 			if (json.array[a].form[b].type=="urlinput") // URL
 				$("div.formholder:last").append("<input class = 'box' type = 'url' name='"+json.array[a].form[b].name+"'>");
-			if (json.array[a].form[b].type=="mapinput") // MAP
+			if (json.array[a].form[b].type=="mapinput"){ // MAP
+				$("div.formholder:last").css("height","400px");
 				$("div.formholder:last").append(
-					"<div id='map-canvas'></div><input class = 'box' readonly='readonly' type = 'url' name='"+json.array[a].form[b].name+"'>"
-					
+					"<div id='map-canvas'></div><input class = 'box' style='position:absolute;visibility: hidden;height:0' readonly='readonly' type = 'text' name='"+json.array[a].form[b].name+"'>"
 				);						
+				init();
+				$("input[readonly=readonly]").val(getlat().toString()+getlng().toString());
+				$("#map-canvas").mouseup(function(){$("input[readonly^=readonly]").val(getlat().toString()+" "+getlng().toString());});
+			}
 		}
 		$("#frm").append("<div class = 'formholder'></div>");	
 		$("div.formholder:last").append("<center><input class='submit' type='submit' value='Изпрати'></center>");

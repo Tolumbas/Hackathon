@@ -11,9 +11,13 @@ div.title{
 	background-color:rgb(164,166,165);
 }
 #map-canvas {
-    width: 100%;
     margin: 0px;
     padding: 0px;
+	margin-top:1%;
+	padding:4%;
+	width:48%;
+	height: 100%;
+	float:left;
 }
 div.formtitle{
 	margin-left:1.5%;
