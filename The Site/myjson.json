@@ -190,6 +190,69 @@ jsonp({
 					"search": "none"
                 },
             ],
-        }
+        },
+		{
+            "name": "Проблем с пътна инфраструктура",
+			"link": "http://www.api.bg/index.php?cID=1729&bID=2090&arHandle=Main&ccm_token=1433660607:3f5a24f06748aec3b5845229fd94fc2b&btask=passthru&method=submit_form#1368743740",
+            "img": "api.png",
+			"form": [
+			{
+				"name": "Question2",
+				"type": "textinput",
+				"desc": "Имена",
+				"must": "false",
+				"search": "bothnames",
+			},
+			{
+				"name": "Question3",
+				"type": "textinput",
+				"desc": "Email",
+				"must": "false",
+				"search": "email"
+			},
+			{
+				"name": "Question4",
+				"type": "telephone",
+				"desc": "Телефон",
+				"must": "false",
+				"search": "telephone"
+			},
+			{
+				"name": "Question5",
+				"type": "textinput",
+				"desc": "Относно",
+				"must": "true",
+				"search": "none"
+			},
+			{
+				"name": "Question6",
+				"type": "textinput",
+				"desc": "Текст",
+				"must": "true",
+				"search": "none"
+			},
+			{
+				"name": "Question7",
+				"type": "fileinput",
+				"desc": "Приложете снимка 1",
+				"must": "false",
+				"search": "none"
+			},
+			{
+				"name": "Question8",
+				"type": "fileinput",
+				"desc": "Приложете снимка 2",
+				"must": "false",
+				"search": "none"
+			},
+			{
+				"name": "Question9",
+				"type": "fileinput",
+				"desc": "Приложете снимка 3",
+				"must": "false",
+				"search": "none"
+			},
+			]
+		}
     ]
 });
