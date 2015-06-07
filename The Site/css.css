@@ -29,7 +29,7 @@ div.formtitle{
 	width:97%;
 	height:30%;
 	overflow:hidden;
-	background-color:rgb(164,166,165);
+	background-color:rgb(255,255,255);
 }
 div.holder{
 	top:5%;
@@ -75,7 +75,7 @@ div.form{
 	border-radius:4px;
 }
 span.desc{
-	text-align:center;
+	text-align:right;
 	font-size:4vmin;
 	margin-top:4%;
 	width:40%;
@@ -102,7 +102,7 @@ html,body{
 img.title{
 	margin-left:3%;
 	width:70%;
-	height:70%;
+	height:25vmin;
 	float:left;
 }
 button.default{
@@ -119,17 +119,16 @@ button.default{
 	
 }
 button.back{
-float:left;
-width:10%;
-height:30vmin;
-margin-left:3%;
+	float:left;
+	width:10%;
+	height:25vmin;
+	margin-left:3%;
 }
-input.submit{
-	height:130px;
+button.submit2{
 	margin-bottom:3%;
 	margin-top:2%;
-	width:50%;
-	height:10%;
+	width:200px;
+	height:60px;
 	font-size:5vmin;
 	border-radius:10px;
 	border:3px solid black;

@@ -19,7 +19,7 @@ function setEvent(a){
 			$("div.holder").animate({left:"0"});
 			$("div.form").empty();
 		});
-		$("div.form").append("<form id='frm' method='POST' action="+json.array[a].link+"></form>")
+		$("div.form").append("<form id='frm' method='POST' action="+json.array[a].link+" onsubmit='return false'></form>")
 		for (var b=0;b<json.array[a].form.length;b++){
 			var s1 = json.array[a].form[b].desc;
 			var s2 = json.array[a].form[b].must=="true"?'*':' ';
@@ -46,16 +46,24 @@ function setEvent(a){
 					"<div id='map-canvas'></div><input class = 'box' style='position:absolute;visibility: hidden;height:0' readonly='readonly' type = 'text' name='"+json.array[a].form[b].name+"'>"
 				);						
 				init();
-				$("input[readonly=readonly]").val(getlat().toString()+getlng().toString());
+				$("input[readonly^=readonly]").val(getlat().toString()+getlng().toString());
 				$("#map-canvas").mouseup(function(){$("input[readonly^=readonly]").val(getlat().toString()+" "+getlng().toString());});
 			}
 		}
+		$
 		$("#frm").append("<div class = 'formholder'></div>");	
-		$("div.formholder:last").append("<center><input class='submit' type='submit' value='Изпрати'></center>");
-		$("input.submit").click(function(){
+		$("div.formholder:last").append("<center><button class='submit2'>Изпрати</button></center>");
+		$("button.submit2").click(function(){
 			for (var b=0;b<json.array[a].form.length;b++){
-				setcookie("div.formholder:eq("+b+")",json.array[a].form[b].search);
+				if (json.array[a].form[b].must == "true" && $("div.formholder:eq("+b+")").val()==''){
+					alert("Попълни всички задължителни полета!");
+					return;
+				}
 			}
+			for (var b=0;b<json.array[a].form.length;b++){
+				//setcookie("div.formholder:eq("+b+")",json.array[a].form[b].search);
+			}
+			
 		});
 		$("div.holder").animate({left:"-105%"});
 	});
