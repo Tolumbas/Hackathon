@@ -1,7 +1,7 @@
 jsonp({
     "array" : [
         {
-            "name" : "трудова експлоатация",
+            "name" : "Трудова експлоатация",
 			"link": "http://www.gli.government.bg/do.action.php",
 			"img": "trudTitle.png",
             "form" : [
@@ -35,20 +35,21 @@ jsonp({
                 },
 				{
                     "name": "postal_code",
-                    "type": "numinput",
+                    "type": "telephone",
 					"desc":"пощенски код",
 					"must":"false",
 					"search":"postal_code"
                 },
 				{
                     "name": "address",
-                    "type": "textinput",
+                    "type": "mapinput",
 					"desc":"адрес",
-					"must":"true"
+					"must":"true",
+					"search":"address"
                 },
 				{
                     "name": "phone",
-                    "type": "telinput",
+                    "type": "telephone",
 					"desc":"Телефон",
 					"must":"true",
 					"search":"telephone"
@@ -77,14 +78,14 @@ jsonp({
                 },
 				{
                     "name": "employer_address",
-                    "type": "textinput",
+                    "type": "mapinput",
 					"desc":"Адрес на обекта, на който се извършва дейността:",
 					"must":"false",
 					"search":"none"
                 },
 				{
                     "name": "bulstat",
-                    "type": "numinput",
+                    "type": "telephone",
 					"desc":"Булстат:",
 					"must":"false",
 					"search":"none"
@@ -128,49 +129,65 @@ jsonp({
                     "name": "incident_title",
                     "type": "textinput",
 					"desc":"Относно",
-					"must":"true"
+					"must":"true",
+					"search": "none"
                 },
                 {
                     "name": "incident_description",
                     "type": "textinput",
 					"desc":"Описание",
-					"must":"true"
+					"must":"true",
+					"search": "none"
                 },
                 {
                     "name": "incident_date",
                     "type": "dateinput",
 					"desc":"Дата:",
-					"must":"false"
+					"must":"false",
+					"search": "none"
                 },
                 {
                     "name": "incident_hour",
                     "type": "telephone",
 					"desc":"Час:",
-					"must":"false"
+					"must":"false",
+					"search": "none"
                 },
 				{
                     "name": "incident_minute",
                     "type": "telephone",
 					"desc":"Минута:",
-					"must":"false"
+					"must":"false",
+					"search": "none"
                 },
                 {
                     "name": "person_first",
                     "type": "textinput",
 					"desc":"Вашето име и фамилия",
-					"must":"true"
+					"must":"true",
+					"search": "bothnames"
                 },
                 {
                     "name": "person_last",
                     "type": "telephone",
 					"desc":"Телефон",
-					"must":"false"
+					"must":"false",
+					"search": "telephone"
                 },
+				{
+					"name": "location_find",
+					"type": "mapinput",
+					"desc": "Изберете местоположението на проблема",
+					"must": "true",
+					"search": "none"
+				
+				}
 				{
                     "name": "photo_id",
                     "type": "fileinput",
 					"desc":"Качете снимки",
-					"must":"false"
+					"must":"false",
+					"search": "none"
                 },
             ],
         }
