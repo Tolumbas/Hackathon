@@ -16,9 +16,10 @@ div.title{
     padding: 0px;
 	margin-top:1%;
 	padding:4%;
-	width:100%;
-	height: 100%;
-	float:left;
+	width:80%;
+	height: 80%;
+	margin-left:auto;
+	margin-right:auto;
 }
 div.formtitle{
 	margin-left:1.5%;

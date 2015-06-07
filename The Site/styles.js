@@ -1,9 +1,14 @@
 var json = "undefined";
+var bool = true;
+
 function jsonp(j){
 	json=j;
 	console.log("got it!");
 }
-
+function isMain(){
+try{window.cpjs.sendToAndroid(bool);}
+catch(e){}
+}
 function setEvent(a){
 	$("#" + a).click(function(){
 		console.log(a);
@@ -15,6 +20,7 @@ function setEvent(a){
 		$("img.back").click(function(){
 			$("div.holder").animate({left:"0"});
 			$("div.form").empty();
+			bool = true;
 		});
 		$("div.form").append("<form id='frm' method='POST' action="+json.array[a].link+" onsubmit='return false'></form>")
 		for (var b=0;b<json.array[a].form.length;b++){
@@ -66,6 +72,7 @@ function setEvent(a){
 			alert("Сигналът е подаден!");
 		});
 		$("div.holder").animate({left:"-105%"});
+		bool = false;
 	});
 }
 
