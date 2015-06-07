@@ -8,42 +8,42 @@ jsonp({
                 {
                     "name": "fname",
                     "type": "textinput",
-					"desc":"Име:",
+					"desc":"Име",
 					"must":"true",
 					"search":"first_name"
                 },
                 {
                     "name": "mname",
                     "type": "textinput",
-					"desc":"презиме",
+					"desc":"Презиме",
 					"must":"true",
 					"search":"middle_name"
                 },
 				{
                     "name": "lname",
                     "type": "textinput",
-					"desc":"фамилия",
+					"desc":"Фамилия",
 					"must":"true",
 					"search":"last_name"
                 },
                 {
                     "name": "city",
                     "type": "textinput",
-					"desc":"населено място",
-					"must":"true",
+					"desc":"Населено място",
+					"must":"false",
 					"search":"city"
                 },
 				{
                     "name": "postal_code",
                     "type": "telephone",
-					"desc":"пощенски код",
+					"desc":"Пощенски код",
 					"must":"false",
 					"search":"postal_code"
                 },
 				{
                     "name": "address",
-                    "type": "mapinput",
-					"desc":"адрес",
+                    "type": "textinput",
+					"desc":"Адрес",
 					"must":"true",
 					"search":"address"
                 },
@@ -51,13 +51,13 @@ jsonp({
                     "name": "phone",
                     "type": "telephone",
 					"desc":"Телефон",
-					"must":"true",
+					"must":"false",
 					"search":"telephone"
                 },
 				{
                     "name": "email",
                     "type": "emailinput",
-					"desc":"E-mail",
+					"desc":"Email",
 					"must":"true",
 					"search":"email"
 					
@@ -65,57 +65,57 @@ jsonp({
 				{
                     "name": "employer",
                     "type": "textinput",
-					"desc":"Работодател (фирма), срещу когото е сигналът:",
+					"desc":"Работодател (фирма), срещу когото е сигналът",
 					"must":"true",
 					"search":"none"
                 },
 				{
                     "name": "employer_location",
                     "type": "textinput",
-					"desc":"Населено място:",
+					"desc":"Населено място",
 					"must":"false",
 					"search":"none"
                 },
 				{
                     "name": "employer_address",
                     "type": "mapinput",
-					"desc":"Адрес на обекта, на който се извършва дейността:",
+					"desc":"Адрес на обекта, на който се извършва дейността",
 					"must":"false",
 					"search":"none"
                 },
 				{
                     "name": "bulstat",
                     "type": "telephone",
-					"desc":"Булстат:",
+					"desc":"Булстат",
 					"must":"false",
 					"search":"none"
                 },
 				{
                     "name": "description",
                     "type": "textinput",
-					"desc":"Описание на нарушението:",
+					"desc":"Описание на нарушението",
 					"must":"true",
 					"search":"none"
                 },
 				{
                     "name": "demands",
                     "type": "textinput",
-					"desc":"Конкретно искане:",
+					"desc":"Конкретно искане",
 					"must":"true",
 					"search":"none"
                 },
 				{
                     "name": "institutions",
                     "type": "textinput",
-					"desc":"Описаният проблем разглежда ли се (разглеждан ли е) от други държавни институции или съдебни органи? От кои?:",
-					"must":"true",
+					"desc":"Описаният проблем разглежда ли се (разглеждан ли е) от други държавни институции или съдебни органи? От кои?",
+					"must":"false",
 					"search":"none"
                 },
 				{
                     "name": "file",
                     "type": "fileinput",
-					"desc":"Файл(сканирано копие на относими документи):",
-					"must":"true",
+					"desc":"Файл(сканирано копие на относими документи)",
+					"must":"false",
 					"search":"none"
                 }
             ]
@@ -142,21 +142,21 @@ jsonp({
                 {
                     "name": "incident_date",
                     "type": "dateinput",
-					"desc":"Дата:",
+					"desc":"Дата",
 					"must":"false",
 					"search": "none"
                 },
                 {
                     "name": "incident_hour",
                     "type": "telephone",
-					"desc":"Час:",
+					"desc":"Час",
 					"must":"false",
 					"search": "none"
                 },
 				{
                     "name": "incident_minute",
                     "type": "telephone",
-					"desc":"Минута:",
+					"desc":"Минута",
 					"must":"false",
 					"search": "none"
                 },
